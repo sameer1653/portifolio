@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.resume-button {
+   
+    float: right;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.resume-button:hover {
+    background-color: #555;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    /* Add fixed positioning */
+    top: 0;
+    /* Position it at the top */
+    width: 100%;
+    /* Make it full-width */
+    z-index: 999;
+    /* Set a high z-index to ensure it appears above other elements */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    margin-top: 50px;
+    /* Add margin to compensate for the fixed header */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+.project {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    /* Adjust the height as needed */
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#about p {
+    text-align: center;
+}
+
+#skills {
+    background-color: #43566a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    /* Change to 'auto' to adjust the height dynamically based on content */
+    border-radius: 20px;
+
+    /* Adjust the height as needed */
+}
+
+#skills h2 {
+    color: #0c0c0c;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 20;
+    text-align: center;
+    border-width: 50px;
+}
+
+#skills li {
+
+    margin: 10px;
+    padding: 10px;
+    background-color: #0cf1de;
+    border: 50px solid #0e0e0e;
+
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(225, 12, 186, 0.1);
+    transform: scale(1.1);
+}
+
+#skills li {
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
